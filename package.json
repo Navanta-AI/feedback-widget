@@ -67,5 +67,13 @@
     "@types/react": "^19.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navanta-AI/feedback-widget.git"
+  },
+  "homepage": "https://github.com/Navanta-AI/feedback-widget#readme",
+  "bugs": {
+    "url": "https://github.com/Navanta-AI/feedback-widget/issues"
   }
 }
