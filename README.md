@@ -1,4 +1,4 @@
-# @navanta/feedback-widget
+# @navanta-ai/feedback-widget
 
 Figma-style pinned feedback for websites — click any element, drop a DOM-anchored
 comment, and resolve it when done. Shadow-DOM isolated, framework-agnostic, with
@@ -11,15 +11,15 @@ self-contained. See `LICENSE` (retains the original copyright).
 ## Install
 
 ```bash
-npm install @navanta/feedback-widget
+npm install @navanta-ai/feedback-widget
 ```
 
 ## React / Next.js (client-side store, no backend)
 
 ```tsx
 "use client";
-import { useSiteping } from "@navanta/feedback-widget/react";
-import { LocalStorageStore } from "@navanta/feedback-widget/adapter-localstorage";
+import { useSiteping } from "@navanta-ai/feedback-widget/react";
+import { LocalStorageStore } from "@navanta-ai/feedback-widget/adapter-localstorage";
 
 export function Feedback() {
   useSiteping({

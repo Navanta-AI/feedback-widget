@@ -1,5 +1,5 @@
 {
-  "name": "@navanta/feedback-widget",
+  "name": "@navanta-ai/feedback-widget",
   "version": "0.4.0",
   "description": "Figma-style pinned feedback widget for websites — DOM-anchored comments with a resolve workflow, shadow-DOM isolated. Source fork of SitePing (MIT).",
   "type": "module",

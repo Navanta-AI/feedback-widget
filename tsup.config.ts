@@ -47,7 +47,7 @@ export default defineConfig([
       o.alias = coreAlias;
     },
   },
-  // ESM React entry (`@navanta/feedback-widget/react`) — React external.
+  // ESM React entry (`@navanta-ai/feedback-widget/react`) — React external.
   {
     entry: ["src/react.ts"],
     format: ["esm"],
