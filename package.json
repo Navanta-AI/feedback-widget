@@ -1,0 +1,71 @@
+{
+  "name": "@navanta/feedback-widget",
+  "version": "0.4.0",
+  "description": "Figma-style pinned feedback widget for websites — DOM-anchored comments with a resolve workflow, shadow-DOM isolated. Source fork of SitePing (MIT).",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "script": "./dist/index.global.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./adapter-localstorage": {
+      "types": "./dist/adapter-localstorage.d.ts",
+      "import": "./dist/adapter-localstorage.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "LICENSE.siteping",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "feedback",
+    "widget",
+    "annotation",
+    "client-review",
+    "visual-feedback",
+    "dom-annotation",
+    "shadow-dom"
+  ],
+  "author": "Navanta AI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@medv/finder": "^4.0.2",
+    "html2canvas": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.7.0"
+  }
+}
